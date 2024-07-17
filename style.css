@@ -1,0 +1,121 @@
+nav {
+	margin: 50px auto 0;
+    
+	position: relative;
+	width: 330px;
+	height: 50px;
+	background-color: #0b2742;
+	border-radius: 8px;
+	font-size: 0;
+}
+nav a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 14px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+nav .animation {
+	position:absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+a:nth-child(1) {
+	width: 110px;
+}
+a:nth-child(2) {
+	width: 110px;
+}
+a:nth-child(3) {
+	width: 110px;
+}
+
+nav .start-home, a:nth-child(1):hover~.animation {
+	width: 110px;
+	left: 0;
+	background-color: #13b81c;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+	width: 110px;
+	left: 110px;
+	background-color: #13b81c;
+
+}
+nav .start-portefolio, a:nth-child(3):hover~.animation {
+	width: 110px;
+	left: 220;
+	background-color: #13b81c;
+}
+
+body {
+    background-color: rgb(17, 71, 42);
+	font-size: 12px;
+	font-family: sans-serif;
+}
+h1 {
+	text-align: center;
+	margin: 190px 0 10px;
+	text-align: center;
+	font-size: 90px;
+	color: #3cad54;
+	text-shadow: 2px 2px 4px #0d110f;
+	font-family: 'Cherry Swash', cursive;
+}
+
+h2 {
+	text-align: center;
+	margin: 10px 0 10px;
+	text-align: center;
+	font-size: 30px;
+	color: #3cad54;
+	text-shadow: 2px 2px 4px #0d110f;
+	font-family: 'Cherry Swash', cursive;
+}
+
+
+
+p {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: #ecf0f1;
+    font-family: 'Cherry Swash',cursive;
+    font-size: 16px;
+}
+
+
+
+.border {
+  border:1px solid rgba(16, 21, 48, 0.218);
+  padding:5px;
+  background-color:#F3E3D9
+}
+
+
+
+
+ .pic{
+    text-align: center;
+}
+
+.button {
+    padding: 10px 25px;
+    margin: 10px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
